@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-gateway" version="1.0.0">
+	<name>Gateway InApp Purchase</name>
+	<author>Milad Mohammadi Rezagah</author>
+	<description>Gateway is the first pioneer payer in Iran.</description>
+	<keywords>iap,inapp,inapp purchase,purchase,gateway,buy,sell,android</keywords>
+	<license>MIT</license>
+	<js-module src="www/Gateway.js" name="Gateway">
+		<clobbers target="Gateway" />
+	</js-module>
+	<engines>
+		<engine name="cordova" version=">=3.0.0" />
+	</engines>
+	<platform name="android">
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="GatewayPlugin">
+				<param name="android-package" value="miladesign.cordova.gateway.GatewayPlugin" />
+			</feature>
+		</config-file>
+		<config-file target="AndroidManifest.xml" parent="/manifest">
+			<uses-permission android:name="android.permission.INTERNET" />
+		</config-file>
+		<config-file target="AndroidManifest.xml" parent="/manifest/application/activity">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:scheme="malaaghe" />
+			</intent-filter>
+		</config-file>
+		<source-file src="src/android/miladesign/cordova/GatewayPlugin.java" target-dir="src/miladesign/cordova/" />
+	</platform>
+</plugin>

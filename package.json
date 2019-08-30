@@ -1,0 +1,42 @@
+{
+	"version": "1.0.0",
+	"name": "cordova-plugin-gateway",
+	"cordova_name": "Gateway InApp Purchase",
+	"description": "Gateway is the first pioneer payer in Iran.",
+	"license": "MIT",
+	"keywords": [
+		"iap",
+		"inapp",
+		"inapp purchase",
+		"purchase",
+		"gateway",
+		"buy",
+		"sell",
+		"ecosystem:cordova",
+		"cordova-android"
+	],
+	"platforms": [
+		"android"
+	],
+	"engines": [
+		{
+			"name": "cordova",
+			"version": ">=3.0.0"
+		}
+	],
+	"cordova": {
+		"id": "cordova-plugin-gateway",
+		"platforms": [
+			"android"
+		]
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/vinoosir/cordova-plugin-gateway.git"
+	},
+	"author": "Milad Mohammadi Rezagah",
+	"bugs": {
+		"url": "https://github.com/vinoosir/cordova-plugin-gateway/issues"
+	},
+	"homepage": "https://github.com/vinoosir/cordova-plugin-gateway#readme"
+}
