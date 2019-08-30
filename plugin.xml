@@ -28,6 +28,6 @@
 				<data android:scheme="malaaghe" />
 			</intent-filter>
 		</config-file>
-		<source-file src="src/android/miladesign/cordova/GatewayPlugin.java" target-dir="src/miladesign/cordova/" />
+		<source-file src="src/GatewayPlugin.java" target-dir="src/miladesign/cordova/" />
 	</platform>
 </plugin>
